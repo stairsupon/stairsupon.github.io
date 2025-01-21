@@ -5,8 +5,8 @@
   <meta name="Volantis" content="6.0.0-alpha.1">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="http://stairsupon.github.io/tags/感言/"/>
+  
+  <link rel="canonical" href="http://stairsupon.github.io/2024/11/05/p11243flowers/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -33,16 +33,22 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>标签：感言 - Stairs_upon_temple</title>
-  <meta name="keywords" content="null">
+  <title>题解：P11243 繁花 - Stairs_upon_temple</title>
+  <meta name="keywords" content="题解,凸轮,null">
   <meta desc name="description" content="Stairs_upon_temple - Stairs_upon_temple - Stairs_upon_temple">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Stairs_upon_temple">
-<meta property="og:url" content="http://stairsupon.github.io/tags/%E6%84%9F%E8%A8%80/index.html">
+  <meta name="description" content="这是一篇图论做法题解 闲话：我看到基本上都是动态规划做法，但我考场上第一时间想到了图论，并且个人认为图论做法更好想到一些，故写此题解。 思路 首先，容易知道对于一个点的贡献，可以认为是一定比该点小的点的个数，而在这里很容易想到可以从该点连边到比该直接点小的点（即题目描述中直接用  或  连接的点），而题目描述中出现若干的点值可能相等，我们可以将这些点合并为一个点并统计相同的个数，然后整体">
+<meta property="og:type" content="article">
+<meta property="og:title" content="题解：P11243 繁花">
+<meta property="og:url" content="http://stairsupon.github.io/2024/11/05/P11243flowers/index.html">
 <meta property="og:site_name" content="Stairs_upon_temple">
+<meta property="og:description" content="这是一篇图论做法题解 闲话：我看到基本上都是动态规划做法，但我考场上第一时间想到了图论，并且个人认为图论做法更好想到一些，故写此题解。 思路 首先，容易知道对于一个点的贡献，可以认为是一定比该点小的点的个数，而在这里很容易想到可以从该点连边到比该直接点小的点（即题目描述中直接用  或  连接的点），而题目描述中出现若干的点值可能相等，我们可以将这些点合并为一个点并统计相同的个数，然后整体">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+<meta property="article:published_time" content="2024-11-05T11:44:00.000Z">
+<meta property="article:modified_time" content="2025-01-21T06:55:56.913Z">
 <meta property="article:author" content="Stairs_upon_temple">
+<meta property="article:tag" content="题解">
+<meta property="article:tag" content="凸轮">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2234,7 +2240,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -2508,25 +2514,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="safearea">
         <div class="body-wrapper">
           
-
 <div id="l_main" class=''>
-  
-    
-      
-  <section class="post-list">
-    
-      
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
-  <link itemprop="mainEntityOfPage" href="http://stairsupon.github.io/2024/12/14/wordstoOIerslater/">
+  <article itemscope itemtype="https://schema.org.cn/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="http://stairsupon.github.io/2024/11/05/P11243flowers/">
   <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
     <meta itemprop="name" content="Stairs_upon_temple">
   </span>
@@ -2535,81 +2525,252 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <meta itemprop="description" content="">
   </span>
   
-  
+
+
   
     <span hidden>
       <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
     </span>
   
+  <div class="article-meta" id="top">
+    
+    
+    
+      <h1 class="title" itemprop="name headline">
+        题解：P11243 繁花
+      </h1>
+      <div class='new-meta-box'>
+        
+          
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="https://schema.org.cn/Person">
+  <a itemprop="url" class='author' href="/about/" rel="nofollow">
+    <img itemprop="image" src="https://cdn.luogu.com.cn/upload/usericon/381643.png" class="lazyload" data-srcset="https://cdn.luogu.com.cn/upload/usericon/381643.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">Stairs_upon_temple</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  
+  
+  
+  <div class='new-meta-item category'>
+    <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
+    <a class="category-link" href="/categories/%E9%A2%98%E8%A7%A3/">题解</a>
+    
+      <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
+        <a href="/categories/%E9%A2%98%E8%A7%A3/" itemprop="url"><span itemprop="name">题解</span></a>
+      </span>
+    
+  </div>
+  
+
+
+
+          
+        
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2024-11-05T19:44:00+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2024年11月5日</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class="new-meta-item wordcount">
+    <a class='notlink'>
+      <i class="fas fa-keyboard fa-fw" aria-hidden="true"></i>
+      <p>字数：741 字</p>
+    </a>
+  </div>
+  <div class="new-meta-item readtime">
+    <a class='notlink'>
+      <i class="fas fa-hourglass-half fa-fw" aria-hidden="true"></i>
+      <p>时长：3 分钟</p>
+    </a>
+  </div>
+
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
+      </div>
+    
+  </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <div class="story post-story"><h2 id="这是一篇图论做法题解">这是一篇图论做法题解</h2>
+<p>闲话：我看到基本上都是动态规划做法，但我考场上第一时间想到了图论，并且个人认为图论做法更好想到一些，故写此题解。</p>
+<h1 id="思路">思路</h1>
+<p>首先，容易知道对于一个点的贡献，可以认为是<strong>一定比该点小</strong>的点的个数，而在这里很容易想到可以从该点连边到比该<strong>直接</strong>点小的点（即题目描述中直接用
+<span class="math inline"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.09ex;" xmlns="http://www.w3.org/2000/svg" width="1.76ex" height="1.312ex" role="img" focusable="false" viewBox="0 -540 778 580"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="3E" d="M84 520Q84 528 88 533T96 539L99 540Q106 540 253 471T544 334L687 265Q694 260 694 250T687 235Q685 233 395 96L107 -40H101Q83 -38 83 -20Q83 -19 83 -17Q82 -10 98 -1Q117 9 248 71Q326 108 378 132L626 250L378 368Q90 504 86 509Q84 513 84 520Z"></path></g></g></g></svg></mjx-container></span> 或 <span class="math inline"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.09ex;" xmlns="http://www.w3.org/2000/svg" width="1.76ex" height="1.312ex" role="img" focusable="false" viewBox="0 -540 778 580"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="3C" d="M694 -11T694 -19T688 -33T678 -40Q671 -40 524 29T234 166L90 235Q83 240 83 250Q83 261 91 266Q664 540 678 540Q681 540 687 534T694 519T687 505Q686 504 417 376L151 250L417 124Q686 -4 687 -5Q694 -11 694 -19Z"></path></g></g></g></svg></mjx-container></span>
+连接的点），而题目描述中出现若干的点值可能相等，我们可以将这些点合并为一个点并统计相同的个数，然后整体来乘比该点小的点的个数，这样可以用
+<span class="math inline"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.566ex;" xmlns="http://www.w3.org/2000/svg" width="4.844ex" height="2.262ex" role="img" focusable="false" viewBox="0 -750 2141 1000"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D442" d="M740 435Q740 320 676 213T511 42T304 -22Q207 -22 138 35T51 201Q50 209 50 244Q50 346 98 438T227 601Q351 704 476 704Q514 704 524 703Q621 689 680 617T740 435ZM637 476Q637 565 591 615T476 665Q396 665 322 605Q242 542 200 428T157 216Q157 126 200 73T314 19Q404 19 485 98T608 313Q637 408 637 476Z"></path></g><g data-mml-node="mo" transform="translate(763,0)"><path data-c="28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path></g><g data-mml-node="mi" transform="translate(1152,0)"><path data-c="1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="mo" transform="translate(1752,0)"><path data-c="29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path></g></g></g></svg></mjx-container></span> 的复杂度过掉此题。</p>
+<p>方便理解，这里给出样例中最后一个的图。</p>
+<p><img src="https://cdn.luogu.com.cn/upload/image_hosting/4rrzjqlg.png" class="lazyload" data-srcset="https://cdn.luogu.com.cn/upload/image_hosting/4rrzjqlg.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<h1 id="具体实现">具体实现</h1>
+<p>先根据题中给的大小关系建图，<strong>从大的点向小的连边</strong>，<strong>相等则合并</strong>（我用的是并查集，其实也可以用缩点），然后统计子树大小总和，该点的贡献即为该点的数量乘上子树大小总和。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">g++ -o2 2.cpp -o c -std=c++14</span></span><br><span class="line"><span class="comment">./c</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;cstdio&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">typedef</span> <span class="type">long</span> <span class="type">long</span> ll;</span><br><span class="line"></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> N=<span class="number">5e6</span><span class="number">+100</span>;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> M=<span class="number">5e6</span><span class="number">+100</span>;</span><br><span class="line"></span><br><span class="line"><span class="type">char</span> *p1,*p2;</span><br><span class="line"><span class="type">char</span> buf[<span class="number">100</span>];</span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> nc() getchar()</span></span><br><span class="line"><span class="comment">// #define nc() (p1==p2 &amp;&amp; (p2=(p1=buf)+fread(buf,1,100,stdin),p1==p2)?EOF:*p1++)</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">void</span> <span class="title">read</span><span class="params">(<span class="type">int</span> &amp;x)</span></span>{</span><br><span class="line">    x=<span class="number">0</span>;</span><br><span class="line">    <span class="type">char</span> ch=<span class="built_in">nc</span>();</span><br><span class="line">    <span class="keyword">while</span>(ch&lt;<span class="number">48</span> || ch&gt;<span class="number">57</span>){</span><br><span class="line">        ch=<span class="built_in">nc</span>();</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">while</span>(ch&gt;=<span class="number">48</span> &amp;&amp; ch&lt;=<span class="number">57</span>){</span><br><span class="line">        x=(x&lt;&lt;<span class="number">3</span>)+(x&lt;&lt;<span class="number">1</span>)+ch<span class="number">-48</span>;</span><br><span class="line">        ch=<span class="built_in">nc</span>();</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">return</span> ;</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> tot;</span><br><span class="line"><span class="type">int</span> head[N];</span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">edge</span>{</span><br><span class="line">    <span class="type">int</span> x;</span><br><span class="line">    <span class="type">int</span> y;</span><br><span class="line">    <span class="type">int</span> next;</span><br><span class="line">}e[M];</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> T;</span><br><span class="line"><span class="type">int</span> n,m;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> siz[N];</span><br><span class="line"><span class="type">int</span> cnt[N];</span><br><span class="line"><span class="type">int</span> son[N];</span><br><span class="line"><span class="type">int</span> fa[N];</span><br><span class="line"><span class="type">int</span> in[N];</span><br><span class="line"><span class="type">char</span> s[N];</span><br><span class="line"><span class="type">int</span> vis[N];</span><br><span class="line">ll ans;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">void</span> <span class="title">init</span><span class="params">()</span></span>{</span><br><span class="line">    tot=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n<span class="number">+10</span>;i++){</span><br><span class="line">        siz[i]=<span class="number">0</span>;</span><br><span class="line">        cnt[i]=<span class="number">1</span>;</span><br><span class="line">        head[i]=<span class="number">-1</span>;</span><br><span class="line">        fa[i]=i;</span><br><span class="line">        vis[i]=<span class="number">0</span>;</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">return</span> ;</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">void</span> <span class="title">add</span><span class="params">(<span class="type">int</span> x,<span class="type">int</span> y)</span></span>{</span><br><span class="line">    e[tot].x=x;</span><br><span class="line">    e[tot].y=y;</span><br><span class="line">    e[tot].next=head[x];</span><br><span class="line">    head[x]=tot++;</span><br><span class="line">    <span class="keyword">return</span> ;</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">int</span> <span class="title">find</span><span class="params">(<span class="type">int</span> x)</span></span>{</span><br><span class="line">    <span class="keyword">while</span>(fa[x]^x)</span><br><span class="line">	x=fa[x];</span><br><span class="line">	<span class="keyword">return</span> x;</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">void</span> <span class="title">merge</span><span class="params">(<span class="type">int</span> x,<span class="type">int</span> y)</span></span>{</span><br><span class="line">    <span class="type">int</span> a=<span class="built_in">find</span>(x);</span><br><span class="line">    <span class="type">int</span> b=<span class="built_in">find</span>(y);</span><br><span class="line">    <span class="keyword">if</span>(a!=b){</span><br><span class="line">        fa[b]=a;</span><br><span class="line">        cnt[a]+=cnt[b];</span><br><span class="line">        cnt[b]=<span class="number">0</span>;</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">return</span> ;</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">dfs</span><span class="params">(<span class="type">int</span> x,<span class="type">int</span> fa)</span></span>{</span><br><span class="line">    siz[x]=cnt[x];</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=head[x];~i;i=e[i].next){</span><br><span class="line">        <span class="type">int</span> y=e[i].y;</span><br><span class="line">        <span class="keyword">if</span>(y==fa)<span class="keyword">continue</span>;</span><br><span class="line">        <span class="keyword">if</span>(!vis[y])<span class="built_in">dfs</span>(y,x);</span><br><span class="line">        siz[x]+=siz[y];</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">if</span>(!vis[x]){</span><br><span class="line">        ans+=<span class="built_in">ll</span>(cnt[x]*(siz[x]-cnt[x]));</span><br><span class="line">        vis[x]=<span class="number">1</span>;</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">return</span> ;</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">debug_build</span><span class="params">()</span></span>{</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"\n"</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%d\n"</span>,tot);</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;tot;i++){</span><br><span class="line">        <span class="type">int</span> x=e[i].x;</span><br><span class="line">        <span class="type">int</span> y=e[i].y;</span><br><span class="line">        <span class="comment">// int w=e[i].w;</span></span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"%d %d\n"</span>,x,y);</span><br><span class="line">    }</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"\n"</span>);</span><br><span class="line">    <span class="keyword">return</span> ;</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>{</span><br><span class="line">    <span class="built_in">read</span>(T);</span><br><span class="line">    <span class="keyword">while</span>(T--){</span><br><span class="line">        ans=<span class="number">0</span>;</span><br><span class="line">        <span class="built_in">read</span>(n);</span><br><span class="line">        <span class="built_in">init</span>();</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">"%s"</span>,s);</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;n;i++){</span><br><span class="line">            <span class="keyword">if</span>(s[i<span class="number">-1</span>]==<span class="string">'='</span>){</span><br><span class="line">                <span class="built_in">merge</span>(i,i<span class="number">+1</span>);</span><br><span class="line">                vis[i<span class="number">+1</span>]=<span class="number">1</span>;</span><br><span class="line">            }</span><br><span class="line">        }</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;n;i++){</span><br><span class="line">            <span class="type">int</span> x=<span class="built_in">find</span>(i);</span><br><span class="line">            <span class="type">int</span> y=<span class="built_in">find</span>(i<span class="number">+1</span>);</span><br><span class="line">            <span class="keyword">if</span>(s[i<span class="number">-1</span>]==<span class="string">'&lt;'</span>)<span class="built_in">add</span>(y,x);</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span>(s[i<span class="number">-1</span>]==<span class="string">'&gt;'</span>)<span class="built_in">add</span>(x,y);</span><br><span class="line">        }</span><br><span class="line">        <span class="comment">// debug_build();</span></span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++){</span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">"%d %d \n"</span>,i,fa[i]);</span><br><span class="line">        }</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++){</span><br><span class="line">            <span class="keyword">if</span>(!vis[i])<span class="built_in">dfs</span>(i,<span class="number">0</span>);</span><br><span class="line">        }</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"%lld\n"</span>,ans);</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">1</span></span><br><span class="line"><span class="comment">13</span></span><br><span class="line"><span class="comment">=&gt;&lt;&lt;=&lt;=&gt;=&gt;&lt;&gt;</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+
+</div>
+  </div>
+  
   
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/12/14/wordstoOIerslater/"  itemprop="url">
-        NOIp 2024 游记 & 退役感言
-      </a>
-    </h2>
+    <div class='footer'>
+       <!-- 参考资料、相关资料等 -->
+      
+       <!-- 相关文章 -->
+      
+      <!-- 版权声明组件 -->
+      
+      <!-- 打赏组件 -->
+      
+    </div>
   
-  <div class='md article-desc' itemprop="articleBody">
+  
+    
+
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2025-01-21T14:55:56+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>本页文档最后更新于：2025年1月21日</p>
+  </a>
+</div>
+
+        
+      
+        
+          
+  
+  
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E9%A2%98%E8%A7%A3/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>题解</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E5%87%B8%E8%BD%AE/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>凸轮</p></a></div>
+  <span hidden itemprop="keywords">题解 凸轮</span>
+  
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
     
       
-        结束了，一切都结束了。
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://stairsupon.github.io/2024/11/05/P11243flowers/&title=题解：P11243 繁花 - Stairs_upon_temple&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://stairsupon.github.io/2024/11/05/P11243flowers/&title=题解：P11243 繁花 - Stairs_upon_temple&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://stairsupon.github.io/2024/11/05/P11243flowers/&title=题解：P11243 繁花 - Stairs_upon_temple&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+    <!-- Custom Files bottomMeta begin -->
+    
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
+  
+  
+
+  
+    <div class="prev-next">
+      
+        <a class='prev' href='/2024/12/14/wordstoOIerslater/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>NOIp 2024 游记 & 退役感言</p>
+          <p class='content'>结束了，一切都结束了。
 
 先浅谈一下这次 NOIP
 首先本来这次是抱着很大的希望的，毕竟准备了那么久，还是希望能够拿到比较高的奖项，然而结果却非常令人失望。
 DAY 0
-考前为了鼓舞士气，我特意做了个主题，现在看来却是讽刺至极。
-因为考试当天是星期六，所以在此之前一天我们收拾收拾就回去了，刚好还能不占月假（因为学竞赛，这可能是我们第一次放月假），回到家后想起同学说的长
-RP 的...
+考前为了鼓舞士...</p>
+        </a>
       
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-          
-          <a class='avatar' href='/about/'><img src='https://cdn.luogu.com.cn/upload/usericon/381643.png'></a>
-          <span hidden itemprop="author" itemscope itemtype="https://schema.org.cn/Person">
-            <meta itemprop="image" content="https://cdn.luogu.com.cn/upload/usericon/381643.png">
-            <meta itemprop="name" content="Stairs_upon_temple">
-            <meta itemprop="url" content="/about/">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-12-14T14:38:00+08:00">2024-12-14</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E9%97%B2%E8%AF%9D/">闲话</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/%E9%97%B2%E8%AF%9D/" itemprop="url"><span itemprop="name">闲话</span></a>
-            </span>
-          
-        
-      </div>
       
-        <div>
-          <a class='readmore' href='/2024/12/14/wordstoOIerslater/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
+        <a class='next' href='/2024/10/09/P10940swingnight/'>
+          <p class='title'>题解：P10940 舞动的夜晚<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>闲话
+基于本题没有题解，那我来水一发网络流，先声明一下，本篇题解可能有部分口胡现象（本人太菜不会证明，但结论是对的，感性理解一下）。
+正文
+本题的结果不能直接用网络流跑出来（至少我不能）。...</p>
+        </a>
       
     </div>
   
-
-</div>
-
-          </div>
-        
-      
-    
-  </section>
+  <!-- 文章推荐 -->
   
-    
+  
+  <!-- Custom Files postEnd begin-->
+  
+  <!-- Custom Files postEnd end-->
+</article>
+
+
+  
+
   
 
 
-    
-  
+
+
+
 </div>
 <aside id='l_side' itemscope itemtype="https://schema.org.cn/WPSideBar">
   
@@ -2618,251 +2779,31 @@ RP 的...
     
     
       
-<section class="widget blogger desktop ">
-  <div class='content'>
-    
-      
-        <a class='avatar flat-box circle' href='/about/'>
-          <img no-lazy src='https://cdn.luogu.com.cn/upload/image_hosting/hg1pqwbi.png'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-          <h2>Stairs_upon_temple</h2>
-        
-        
-        
-          <p><span id="jinrishici-sentence">Stairs_upon_temple</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="/atom.xml"
-              class="social fa-solid fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="mailto:liguozhen_upon@outlook.com"
-              class="social fa-solid fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/stairsupon/"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget tagcloud desktop">
-    
-  <header>
-    
-      <a href='/tags/'><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i><span class='name'>标签云图</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/%E4%BA%8C%E5%88%86/" style="font-size: 14px; color: #999">二分</a> <a href="/tags/%E5%87%B8%E8%BD%AE/" style="font-size: 14px; color: #999">凸轮</a> <a href="/tags/%E5%9B%BE%E8%AE%BA%E5%BB%BA%E6%A8%A1/" style="font-size: 24px; color: #555">图论建模</a> <a href="/tags/%E6%84%9F%E8%A8%80/" style="font-size: 14px; color: #999">感言</a> <a href="/tags/%E7%BD%91%E7%BB%9C%E6%B5%81/" style="font-size: 24px; color: #555">网络流</a> <a href="/tags/%E8%B4%AA%E5%BF%83/" style="font-size: 14px; color: #999">贪心</a> <a href="/tags/%E9%A2%98%E8%A7%A3/" style="font-size: 14px; color: #999">题解</a> <a href="/tags/%E9%B2%9C%E8%8A%B1/" style="font-size: 14px; color: #999">鲜花</a>
-    </div>
-  </section>
-
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget category desktop">
-    
-  <header>
-    
-      <a href='/blog/categories/'><i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/categories/%E4%BA%8C%E5%88%86/" href="/categories/%E4%BA%8C%E5%88%86/"
-            active-action="action-categoriesE4BA8CE58886"
-            ><div class='name'>-二分</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E7%BD%91%E7%BB%9C%E6%B5%81/" href="/categories/%E7%BD%91%E7%BB%9C%E6%B5%81/"
-            active-action="action-categoriesE7BD91E7BB9CE6B581"
-            ><div class='name'>网络流</div><div class='badge'>(2)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E9%97%B2%E8%AF%9D/" href="/categories/%E9%97%B2%E8%AF%9D/"
-            active-action="action-categoriesE997B2E8AF9D"
-            ><div class='name'>闲话</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E9%A2%98%E8%A7%A3/" href="/categories/%E9%A2%98%E8%A7%A3/"
-            active-action="action-categoriesE9A298E8A7A3"
-            ><div class='name'>题解</div><div class='badge'>(1)</div></a></li>
-        
-      </ul>
-    </div>
-  </section>
-
-
-    
-  
-
-  
-    
-    
-      
-<section class="widget grid desktop">
-  
-  <header>
-    
-      <i class="fa-solid fa-map-signs fa-fw" aria-hidden="true"></i><span class='name'>分类导航</span>
-    
-  </header>
-
-
-  <div class='content'>
-    <div class="grid navigation fixed">
-      
-        <a class="flat-box" href="/archives/"
-          
-          
-          active-action="action-archives">
-          
-            <i class="fa-solid fa-file-alt fa-fw" aria-hidden="true"></i>
-          
-          归档文章
-        </a>
-      
-        <a class="flat-box" href="/friends/"
-          
-          
-            target="_blank"
-          
-          active-action="action-friends">
-          
-            <i class="fa-solid fa-user-friends fa-fw" aria-hidden="true"></i>
-          
-          友情链接
-        </a>
-      
-    </div>
-  </div>
-</section>
-
-    
-  
-
-  
-    
-    
-      
-<section class="widget desktop">
-  
-  <header>
-    
-      <i class="fa-solid fa-award fa-fw" aria-hidden="true"></i><span class='name'>站点信息</span>
-    
-  </header>
-
-
-  <div class='content'>
-    <div class="webinfo">
-      
-        <div class="webinfo-item">
-          <div>文章数目：</div>
-          <div>5 篇</div>
-        </div>
-      
-
-      
-        <div class="webinfo-item">
-          <div>已运行时间：</div>
-          <div id="webinfo-runtime-count"></div>
-        </div>
-      
-
-
-      
-        <div class="webinfo-item">
-          <div>本站总字数：</div>
-          <div>7k 字</div>
-        </div>
-      
-
-      
-        <div class="webinfo-item">
-          <div>本站访客数：</div>
-          <div>
-            <span id="busuanzi_site_uv">
-              <i class="fa-solid fa-fan fa-spin fa-fw" aria-hidden="true"></i>
-            </span> 
-            人
-          </div>
-        </div>
-        <div class="webinfo-item">
-          <div>本站总访问量：</div>
-          <div>
-            <span id="busuanzi_site_pv">
-              <i class="fa-solid fa-fan fa-spin fa-fw" aria-hidden="true"></i>
-            </span> 
-            次
-          </div>
-        </div>
-      
-
-      
-        <div class="webinfo-item">
-          <div>最后活动时间：</div>
-          <div id="last-update-show">2025-01-21 日</div>
-        </div>
-      
-    </div>
-  </div>
-</section>
-
     
   
 
 
 <div class="widget-sticky">
+
+  
+  
+
+
+<section class="widget toc-wrapper desktop" id="toc-div" >
+  
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+  <div class='content'>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%99%E6%98%AF%E4%B8%80%E7%AF%87%E5%9B%BE%E8%AE%BA%E5%81%9A%E6%B3%95%E9%A2%98%E8%A7%A3"><span class="toc-number">1.</span> <span class="toc-text">这是一篇图论做法题解</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%80%9D%E8%B7%AF"><span class="toc-number"></span> <span class="toc-text">思路</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%85%B7%E4%BD%93%E5%AE%9E%E7%8E%B0"><span class="toc-number"></span> <span class="toc-text">具体实现</span></a>
+  </div>
+</section>
+
+  
 
 </div>
 
@@ -2870,6 +2811,7 @@ RP 的...
   
   <!-- Custom Files side end -->
 </aside>
+
 
 
         </div>
@@ -4104,7 +4046,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"https://schema.org.cn","@type":"Organization","name":"Stairs_upon_temple","url":"http://stairsupon.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"https://schema.org.cn","@type":"Person","name":"Stairs_upon_temple","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://stairsupon.github.io/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"https://schema.org.cn","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://stairsupon.github.io/","name":"Stairs_upon_temple"}},{"@type":"ListItem","position":2,"item":{"@id":"http://stairsupon.github.io/tags/感言/","name":"感言"}}]},{"@context":"https://schema.org.cn","@type":"WebSite","name":"Stairs_upon_temple","url":"http://stairsupon.github.io/","keywords":null,"description":"","author":{"@type":"Person","name":"Stairs_upon_temple","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://stairsupon.github.io/","description":""},"publisher":{"@type":"Organization","name":"Stairs_upon_temple","url":"http://stairsupon.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://stairsupon.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"https://schema.org.cn","@type":"BlogPosting","description":"","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"Stairs_upon_temple","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://stairsupon.github.io/"},"publisher":{"@type":"Organization","name":"Stairs_upon_temple","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"https://schema.org.cn","@type":"Organization","name":"Stairs_upon_temple","url":"http://stairsupon.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"https://schema.org.cn","@type":"Person","name":"Stairs_upon_temple","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://stairsupon.github.io/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"https://schema.org.cn","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://stairsupon.github.io/","name":"Stairs_upon_temple"}},{"@type":"ListItem","position":2,"item":{"@id":"http://stairsupon.github.io/categories/题解/","name":"题解"}},{"@type":"ListItem","position":3,"item":{"@id":"http://stairsupon.github.io/2024/11/05/P11243flowers/","name":"题解：P11243 繁花"}}]},{"@context":"https://schema.org.cn","@type":"WebSite","name":"Stairs_upon_temple","url":"http://stairsupon.github.io/","keywords":null,"description":"","author":{"@type":"Person","name":"Stairs_upon_temple","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://stairsupon.github.io/","description":""},"publisher":{"@type":"Organization","name":"Stairs_upon_temple","url":"http://stairsupon.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://stairsupon.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"https://schema.org.cn","@type":"BlogPosting","headline":"题解：P11243 繁花","description":"","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://stairsupon.github.io/2024/11/05/P11243flowers/"},"author":{"@type":"Person","name":"Stairs_upon_temple","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://stairsupon.github.io/"},"publisher":{"@type":"Organization","name":"Stairs_upon_temple","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://stairsupon.github.io/2024/11/05/P11243flowers/","wordCount":0,"datePublished":"2024-11-05T11:44:00.000Z","dateModified":"2025-01-21T06:55:56.913Z","articleSection":"题解","keywords":"题解,凸轮","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
